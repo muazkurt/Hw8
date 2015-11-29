@@ -1,11 +1,9 @@
 #!/usr/bin/python
 # -*- coding: utf8 -*-
-###########
-MorseAlphabet=['.----','..---','...--','....-','.....','-....','--...','---..','----.','-----']####	assigning the morse values 0-9
+########### 
+MorseAlphabet = { '1': '.----',	'2': '..---',	'3': '...--',	'4': '....-',	'5': '.....',	'6': '-....',	'7': '--...',	'8': '---..',	'9': '----.',	'0': '-----'}					  ##assigning the morse values 0-9
 x=raw_input("Give me the value: ")
 def MorseChanging(a):
-	if(a<10):
-		print MorseAlphabet[a]
-		
-
+	for value in a:						  ##detecting the parts of given values 
+		print MorseAlphabet[value]##printing the value parts from assigned diction
 MorseChanging(x)
